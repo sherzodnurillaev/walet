@@ -1,0 +1,260 @@
+{
+    "users": [
+        {
+            "id": "b195",
+            "name": "Sherik",
+            "email": "sherzod1700@mail.ru",
+            "password": "1234",
+            "token": "MdDRKiGd5dHs7uag",
+            "wallets": [
+              {
+                "name": "Bitcoin",
+                "amount": 2.5,
+                "value": 30000,
+                "purchased": [
+                  { "quantity": 1.0, "date": "2024-09-01" },
+                  { "quantity": 0.5, "date": "2024-09-03" },
+                  { "quantity": 0.2, "date": "2024-09-04" },
+                  { "quantity": 0.3, "date": "2024-09-05" },
+                  { "quantity": 0.4, "date": "2024-09-06" },
+                  { "quantity": 0.6, "date": "2024-09-07" },
+                  { "quantity": 0.5, "date": "2024-09-08" }
+                ]
+              },
+              {
+                "name": "Ethereum",
+                "amount": 11.5,
+                "value": 2000,
+                "purchased": [
+                  { "quantity": 5.0, "date": "2024-09-01" },
+                  { "quantity": 2.5, "date": "2024-09-05" },
+                  { "quantity": 1.0, "date": "2024-09-06" },
+                  { "quantity": 1.2, "date": "2024-09-07" },
+                  { "quantity": 0.8, "date": "2024-09-08" },
+                  { "quantity": 0.3, "date": "2024-09-09" },
+                  { "quantity": 0.7, "date": "2024-09-10" }
+                ]
+              },
+              {
+                "name": "Ripple",
+                "amount": 53.0,
+                "value": 0.5,
+                "purchased": [
+                  { "quantity": 50.0, "date": "2024-09-02" },
+                  { "quantity": 1.5, "date": "2024-09-03" },
+                  { "quantity": 0.8, "date": "2024-09-04" },
+                  { "quantity": 0.7, "date": "2024-09-05" },
+                  { "quantity": 0.3, "date": "2024-09-06" },
+                  { "quantity": 0.5, "date": "2024-09-07" },
+                  { "quantity": 0.2, "date": "2024-09-08" }
+                ]
+              },
+              {
+                "name": "Litecoin",
+                "amount": 115.0,
+                "value": 100,
+                "purchased": [
+                  { "quantity": 20.0, "date": "2024-09-03" },
+                  { "quantity": 15.0, "date": "2024-09-04" },
+                  { "quantity": 10.0, "date": "2024-09-05" },
+                  { "quantity": 5.0, "date": "2024-09-06" },
+                  { "quantity": 8.0, "date": "2024-09-07" },
+                  { "quantity": 7.0, "date": "2024-09-08" },
+                  { "quantity": 10.0, "date": "2024-09-09" }
+                ]
+              }
+            ]
+          },
+      {
+        "id": "cd85",
+        "name": "Nicolas Lee",
+        "email": "sher1888@mail.ru",
+        "password": "43211234",
+        "token": "F18JtmWiD2p7x6KU",
+        "wallets": [
+          {
+            "name": "Bitcoin",
+            "amount": 0.8,
+            "value": 30000,
+            "purchased": [
+              { "quantity": 0.8, "date": "2024-08-20" }
+            ]
+          },
+          {
+            "name": "Ethereum",
+            "amount": 5,
+            "value": 2000,
+            "purchased": [
+              { "quantity": 5, "date": "2024-08-21" }
+            ]
+          },
+          {
+            "name": "Ripple",
+            "amount": 2000,
+            "value": 0.5,
+            "purchased": [
+              { "quantity": 2000, "date": "2024-08-22" }
+            ]
+          },
+          {
+            "name": "Litecoin",
+            "amount": 30,
+            "value": 100,
+            "purchased": [
+              { "quantity": 30, "date": "2024-08-23" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2061",
+        "name": "test",
+        "email": "test",
+        "password": "test",
+        "token": "5RN35FhCo9A3nude",
+        "wallets": [
+          {
+            "name": "Bitcoin",
+            "amount": 1.2,
+            "value": 30000,
+            "purchased": [
+              { "quantity": 1.2, "date": "2024-07-10" }
+            ]
+          },
+          {
+            "name": "Ethereum",
+            "amount": 8,
+            "value": 2000,
+            "purchased": [
+              { "quantity": 8, "date": "2024-07-11" }
+            ]
+          },
+          {
+            "name": "Ripple",
+            "amount": 3000,
+            "value": 0.5,
+            "purchased": [
+              { "quantity": 3000, "date": "2024-07-12" }
+            ]
+          },
+          {
+            "name": "Litecoin",
+            "amount": 40,
+            "value": 100,
+            "purchased": [
+              { "quantity": 40, "date": "2024-07-13" }
+            ]
+          }
+        ]
+      }
+    ],
+        "news": [
+          {
+            "title": "Bitcoin Reaches New Record High This Month",
+            "date": "2024-09-01"
+          },
+          {
+            "title": "Ethereum 2.0 Launch: What You Need to Know",
+            "date": "2024-09-05"
+          },
+          {
+            "title": "Ripple's New Partnership with Major Financial Institution",
+            "date": "2024-09-10"
+          },
+          {
+            "title": "Litecoin Announces Major Update to Their Wallet",
+            "date": "2024-09-15"
+          },
+          {
+            "title": "New Regulations Impacting the Crypto Market",
+            "date": "2024-09-20"
+          },
+          {
+            "title": "Bitcoin Mining Technology Shows Significant Improvement",
+            "date": "2024-09-25"
+          },
+          {
+            "title": "DeFi Innovations to Watch Out For in 2024",
+            "date": "2024-09-30"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          },
+          {
+            "title": "Upcoming Exchange Listings for Popular Cryptocurrencies",
+            "date": "2024-10-01"
+          }
+        ],
+        "widget": [
+            {
+              "name": "Bitcoin",
+              "symbol": "BTC",
+              "price": 30000
+            },
+            {
+              "name": "Ethereum",
+              "symbol": "ETH",
+              "price": 2000
+            },
+            {
+              "name": "Ripple",
+              "symbol": "XRP",
+              "price": 0.5
+            },
+            {
+              "name": "Litecoin",
+              "symbol": "LTC",
+              "price": 100
+            },
+            {
+              "name": "Cardano",
+              "symbol": "ADA",
+              "price": 1.2
+            },
+            {
+              "name": "Polkadot",
+              "symbol": "DOT",
+              "price": 6.5
+            },
+            {
+              "name": "Chainlink",
+              "symbol": "LINK",
+              "price": 25
+            }
+          ]
+      
+  }
+  

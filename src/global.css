@@ -1,0 +1,110 @@
+* {
+    padding: 0 !important;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    background: radial-gradient(63.88% 129.61% at 25.55% 31.91%, #20135C 0%, #140739 92.82%);
+    height: 100vh;
+}
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+}
+.valuet {
+    font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 4px #06051340;
+}
+
+.inp_block {
+    background: linear-gradient(180deg, #1E1156 0%, rgba(28, 35, 64, 0) 100%);
+    box-shadow: 0px 25px 25px 0px #00032080;
+}
+.inp_ {
+    background: linear-gradient(180deg, #1E1156 0%, rgb(28, 35, 64) 100%);
+    box-shadow: 0px 25px 25px 0px #00032080;
+}
+
+.inp {
+    padding: 0 55px !important;
+}
+.add {
+    padding: 3px 7px !important;
+}
+
+.btnUp {
+    background: linear-gradient(88.43deg, #2F3453 11.5%, #242845 76.7%);
+    box-shadow: 0px 4px 12px 0px #00000026;
+    width: 110px;
+    color: #949EC0;
+    padding: 7px 0 !important;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btnIn {
+    background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+    box-shadow: 0px 4px 12px 0px #00000026;
+    width: 110px;
+    color: #fff;
+    padding: 7px 0 !important;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+}
+
+.nav {
+    background: linear-gradient(0.32deg, rgba(28, 35, 64, 0) -5.79%, #1C0F54 114.59%);
+    box-shadow: 0px -5px 25px 0px #00032080;
+    /* height: 100vh; */
+}
+
+.active {
+    width: 200px;
+    background-color: #32395E;
+    padding: 10px 20px !important;
+    border-radius: 8px;
+    border-bottom: 2px solid #1288E8;
+}
+
+.widget {
+    background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+    box-shadow: 0px 2px 4px 0px #5523DD66;
+    padding: 6px 23px !important;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.widget:hover {
+    box-shadow: 0 0 20px 0 #5523DD66;
+    scale: 1.02;
+}
+
+.collor {
+    
+    .nano:nth-child(1n) {
+        background: linear-gradient(237.07deg, #604392 -8.06%, #0F0B38 96.63%);
+    }
+    .nano:nth-child(2n) {
+        background: linear-gradient(237.07deg, #D66168 -8.06%, #0F0B38 96.63%);
+
+    }
+    .nano:nth-child(3n) {
+        background: linear-gradient(237.07deg, #6162D6 -8.06%, #0F0B38 96.63%);
+
+    }
+    .nano:nth-child(4n) {
+        background: linear-gradient(237.07deg, #EB8338 -8.06%, #0F0B38 96.63%);
+
+    }
+}
