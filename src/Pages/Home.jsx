@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PieChart from '../Components/PieChart';
 import LineChart from '../Components/LineChart';
-import Card from '../Components/Card';
-import Market from '../Components/Market';
-import Handle from '../Components/HandleBtn';
-import Add from '../Components/AddWidget';
+import Card from '../Components/Home/Card';
+import Market from '../Components/Home/Market';
+import Handle from '../Components/Home/HandleBtn';
+import Add from '../Components/Home/AddWidget';
 
 const url = "http://localhost:8080/";
 const user = "users"
@@ -72,8 +72,12 @@ const Home = () => {
             <div className="flex gap-[16px] mt-6">
                 <div className="nav w-[208px] h-[296px] rounded-[8px]">
                     <h1 className='flex m-3 text-white'>Balance</h1>
-                    <div>
+                    <div className='relative'>
                         <PieChart />
+                    <div className="absolute top-[40px] right-[35%]">
+                        <h1 className='text-[#54669C] text-[14px]'>Balance</h1>
+                        <span className='text-white text-[14px]'>{"$" + Math.round(totalAmount)}</span>
+                    </div>
                     </div>
                 </div>
                 <div className="nav w-[208px] h-[296px]">
@@ -86,7 +90,7 @@ const Home = () => {
                     </div>
                     <LineChart />
                 </div>
-                <div className="collor grid grid-cols-2 gap-[16px]">
+                <div className="collor grid grid-cols-2 gap-[16px] h-[297px] overflow-scroll">
                     {
                         wallets.map((wallet) => (
                             <Card key={wallet.name} wallet={wallet} />

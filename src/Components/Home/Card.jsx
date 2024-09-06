@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({wallet}) => {
     return (
-        <div className="nano w-[250px] h-[140px] bg-white rounded-[8px]">
+        <div className="nano min-w-[250px] h-[140px] bg-white rounded-[8px]">
             <h1 className="flex text-white ml-1 mt-4 text-[14px]">{wallet.name}</h1>
             <div className="flex items-center gap-4">
                 <img className="ml-1" src="https://s2.coinmarketcap.com/static/img/coins/64x64/6.png" alt="" />

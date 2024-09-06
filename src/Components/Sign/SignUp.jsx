@@ -1,20 +1,23 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import generateToken from '../http/Token';
+import generateToken from '../../http/Token';
+import { Sign } from '../../App';
+
+const url = "http://localhost:8080/users"
 
 const SignUp = () => {
     const [dataUser, setData] = useState({})
     const [test, setTest] = useState(false)
-    
+    const token = generateToken()
 
+    const { sign, setSign } = useContext(Sign);
+    
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
-
-    const url = "http://localhost:8080/users"
 
     useEffect(() => {
         axios.get(url)
@@ -22,13 +25,8 @@ const SignUp = () => {
             setData(res.data)
             console.log(res.data);
         })
-        console.log(test);
         
     }, [test])
-    const token = generateToken()
-    console.log(token);
-    
-
 
     const onSubmit = (data) => {
         
@@ -37,17 +35,16 @@ const SignUp = () => {
             if (user.email === data.email) {
                 status = true
             }
-            
         });
         if (!status) {
-                axios.post(url, {...data, token})
+                axios.post(url, {...data })
                 .then(res => {
                 console.log(res);
+                localStorage.setItem("token", token)
+                setSign(true)
                 setTest(!test)
             })
         }
-        
-        
     }
 
     return (
@@ -78,6 +75,8 @@ const SignUp = () => {
                     SIGN UP
                 </button>
                 <button
+                    type='button'
+                    onClick={() => !sign ? setSign(true) : ""}
                     className="btnUp"
                 >
                     SIGN IN

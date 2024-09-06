@@ -8,7 +8,7 @@ import CustomLegend from './CustomeLegend';
 
 const url = "http://localhost:8080/users";
 
-const DonutChart = () => {
+const WalletChart = () => {
     const [crypt, setCrypt] = useState([]);
 
     const id = localStorage.getItem("userId");
@@ -37,7 +37,7 @@ const DonutChart = () => {
             '#FEB019'
         ][index % 4]), 
         legend: {
-            show: false
+            show: true
         },
         dataLabels: {
             enabled: false, 
@@ -64,12 +64,8 @@ const DonutChart = () => {
     return (
         <div style={{ width: '100%', height: '300px' }}>
             <ApexCharts options={chartOptions} series={chartSeries} type="donut" width="100%" />
-            <CustomLegend crypt={crypt.map(crypto => ({
-                name: crypto.name || 'Unknown',
-                color: chartOptions.colors[crypt.indexOf(crypto)] 
-            }))} />
         </div>
     );
 };
 
-export default DonutChart;
+export default WalletChart;

@@ -53,7 +53,7 @@ const Drop = ({ onSelect }) => {
   return (
     <Space wrap>
       <Dropdown.Button menu={menuProps} onClick={handleButtonClick}>
-        Dropdown 
+      Choose a crypto
       </Dropdown.Button>
     </Space>
   );

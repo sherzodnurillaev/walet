@@ -9,7 +9,15 @@ const Layout = () => {
                 <Nav />
             </nav>
             <section className="">
-                <header className="w-[100%] h-[50px] bg-yellow-500"></header>
+                <header className="w-[100%] h-[50px] ">
+                    <div className="flex">
+                        <input type="text" placeholder="Search..." 
+                        className="bg-[#161245] !px-[7px] h-[30px] rounded-[8px] relative"/>
+                    </div>
+                    <div className="absolute">
+                        <img src="/search.png" alt="" className="" />
+                    </div>
+                </header>
                 <article>
                     <Outlet />
                 </article>

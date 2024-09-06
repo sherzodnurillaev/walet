@@ -1,17 +1,17 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import { Sign } from '../../App';
 
-
+const url = "http://localhost:8080/users"
 
 const SignIn = () => {
     const navigate = useNavigate();
     const [test, setTest] = useState(false)
     const [resData, setResData] = useState()
 
-    const url = "http://localhost:8080/users"
-    
+    const { sign, setSign } = useContext(Sign);
     
     const {
         register,
@@ -41,7 +41,6 @@ const SignIn = () => {
 
     }
     
-
     return (
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-10 w-100 m-[50px]'>
             <div className="relative">
@@ -59,6 +58,8 @@ const SignIn = () => {
 
             <div className="flex justify-center gap-[32px]">
                 <button
+                onClick={() => sign ? setSign(false) : ""}
+                type='button'
                     className="btnUp"
                 >
                     SIGN UP
@@ -69,8 +70,7 @@ const SignIn = () => {
                     SIGN IN
                 </button>
             </div>
-        </form>
-            
+        </form>   
     )
 }
 

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ApexCharts from 'react-apexcharts';
+import '../chart.css'; // Подключите CSS файл для стилей
 
 const url = "http://localhost:8080/users";
 
@@ -43,10 +44,10 @@ const LineChart = () => {
         },
         stroke: {
             curve: 'smooth', 
+            width: 3, // Толщина линии
         },
         grid: {
             show: true,
-
             strokeDashArray: 0,
             position: 'back', 
             row: {
@@ -54,8 +55,18 @@ const LineChart = () => {
                 opacity: 0.5 // Прозрачность строк сетки
             },
             column: {
-                // colors: '#f4f4f4', // Цвет вертикальных линий сетки
                 opacity: 0.5 // Прозрачность вертикальных линий сетки
+            },
+        },
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shade: 'light',
+                shadeIntensity: 0.3,
+                inverseColors: false,
+                opacityFrom: 0.7,
+                opacityTo: 0.5,
+                stops: [0, 100],
             },
         },
         dataLabels: {
@@ -68,6 +79,12 @@ const LineChart = () => {
                 }
             }
         },
+        plotOptions: {
+            line: {
+                colors: ['#00f'], // Цвет линии
+                opacity: 0.8, // Прозрачность линии
+            }
+        },
     };
 
     const chartSeries = [{
@@ -76,7 +93,7 @@ const LineChart = () => {
     }];
 
     return (
-        <div style={{ width: '100%', height: '400px' }}>
+        <div className="chart-container" style={{ width: '100%', height: '230px' }}>
             <ApexCharts options={chartOptions} series={chartSeries} type="line" height="230" />
         </div>
     );
